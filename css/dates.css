@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the navbar */
+.navbar {
+    background-color: #336699;
+}
+
+/* Style the navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FFA500; /* Change the color on hover */
+}
+@media (min-width: 400px) and (max-width:600px) {
+    .menu-button {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+/* Styles for the important dates page with background image and gradient */
+/*body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../../assets/contact.jpg') center/cover no-repeat, linear-gradient(to bottom, #007bff, #0056b3);
+    color: #fff;
+    background-blend-mode: multiply;
+    height: 100vh;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.important-dates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.spot-registration {
+    background-color: rgba(0, 123, 255, 0.9);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 300px;
+}
+
+.date-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.date, .time, .location, .fee {
+    background-color: rgba(0, 123, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+}
+
+/* Customize the content and styles with your specific fest's important dates. */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../../assets/contact.jpg') center/cover no-repeat, linear-gradient(to bottom, #007bff, #0056b3);
+   
+    background-blend-mode: multiply;
+    height: 100vh;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.important-dates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+.spot-registration {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.date-info {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.date,
+.time,
+.location {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.registration-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.registration-button:hover {
+    background-color: #0056b3;
+}

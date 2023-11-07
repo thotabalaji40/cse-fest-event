@@ -1,0 +1,326 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Style the navbar */
+.navbar {
+    background-color: #336699;
+}
+
+/* Style the navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FFA500; /* Change the color on hover */
+}
+@media (min-width: 400px) and (max-width:600px) {
+    .menu-button {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+.first{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../../assets/bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+}
+.content{
+    background-color: rgba(111, 160, 140, 0.3);
+    width: 800px;
+    position: absolute;
+    left: 400px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding-top: 20px;
+}
+
+.first h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* margin-bottom: 30px; */
+}
+.first h1 span{
+    color: rgb(222, 225, 13);
+}
+.first .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first .logo img{
+    width: 150px;
+    margin-right: 50px;
+}
+.first .logo h1{
+    /* margin-top: 30px; */
+    font-size: 130px;
+    /* text-overflow: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)); */
+    background: -webkit-linear-gradient(#eee, #3bd009);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.paragraph{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    color:#fff;
+}
+
+.special{
+    background-color: #000;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.special .heading{
+    color: rgb(222, 225, 13);
+    margin-bottom: 10px;
+}
+
+
+/* .fest-details {
+    
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.first{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../../assets/svist1.avif'); 
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    height: 100vh;
+} */
+/* Reset some default styles for better consistency */
+
+
+
+.department-title {
+    margin-top: 5px;
+    text-align: center;
+    background: black; /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    overflow: hidden;
+    /* border-radius: 30px; */
+    margin-bottom: 5px;
+}
+
+/* Animated Title Styles */
+.animated-title {
+    font-size: 48px;
+    color: transparent;
+    background: linear-gradient(90deg, #f20089, #00f5a0, #0279d0); /* Text gradient background */
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    animation: shimmer 2s infinite linear;
+}
+
+/* Define the animation */
+@keyframes shimmer {
+    0% {
+        background-position: -500px;
+    }
+    100% {
+        background-position: 500px;
+    }
+}
+.cards{
+    height: 80vh;
+    /* max-width: 90%; */
+    text-align: center;
+    margin-top: 5px;
+    background: #000;
+    margin-bottom: 5px;
+}
+.cards h1{
+    color: #fff;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+.cards .maincard{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.cards .maincard .card{
+    height: 400px;
+    max-width: 250px;
+    width: 100%;
+    background-color: #5b6025;
+    border-radius: 30px;
+}
+.cards .maincard .card img{
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+    border-radius: 50%;
+}
+.cards .maincard .card h1{
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 800;
+}
+.cards .maincard .card h1 sub{
+    font-size: 10px;  
+}
+.cards .maincard .card h3{
+    font-size: 18px;
+    margin: 10px;
+    font-weight: 700;
+}
+.cards .maincard .card p{
+    font-size: 15px;
+    font-weight: 800;
+}
+.map{
+    text-align: center;
+    background-color: #000;
+    /* margin-left: 20px; */
+    /* max-width: 98%; */
+}
+.map h1{
+    color: #fff;
+    padding-top: 20px;
+    text-transform: uppercase;
+    margin: 10px;
+}
+.map iframe{
+    margin: 20px;
+    width: 1000px;
+    height: 400px;
+}
+
+/* Footer Styles */
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+#NEW{
+    color: rgb(222, 225, 13);
+}
+.new2{
+    color:aqua
+}
+@media (max-width: 768px) {
+    .fest-details h1 {
+        font-size: 18px;
+    }
+
+    .fest-details .paragraph {
+        font-size: 14px;
+    }
+
+    .fest-details .new2 {
+        font-weight: normal;
+    }
+
+    .fest-details .logo img {
+        max-width: 80px;
+    }
+
+    .fest-details .logo h1 {
+        font-size: 16px;
+        margin-left: 5px;
+    }
+
+    .special {
+        margin-top: 10px;
+    }
+
+    .special .heading {
+        font-weight: normal;
+    }
+
+    .department-title .animated-title {
+        font-size: 18px;
+    }
+
+    .card {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .card img {
+        max-width: 80px;
+    }
+
+    .card h1 {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    .card h3 {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .map {
+        padding: 10px;
+    }
+}

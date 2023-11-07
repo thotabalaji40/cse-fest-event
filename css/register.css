@@ -1,0 +1,107 @@
+
+
+/* Style the navbar */
+.navbar {
+    background-color: #336699;
+}
+
+/* Style the navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FFA500; /* Change the color on hover */
+}
+@media (min-width: 400px) and (max-width:600px) {
+    .menu-button {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+
+.google-form-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #4285F4; 
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.google-form-button:hover {
+    background-color: #3a73b4; /* Darker shade of Google's brand color on hover */
+}
+
+    /* Reset default browser styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .content {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+        background-color: transparent;
+        margin: 0;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    /* .qr-code {
+        width:300px;
+        margin: 0 5px;
+        height:40vh;
+    } */
+    .qr-code{
+        display: flex;
+        height: 500px;
+        width: 300px;
+    }
