@@ -78,6 +78,8 @@ header {
 
 .container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     padding: 30px;
@@ -125,5 +127,53 @@ button {
 
 button:hover {
     background-color: #555;
+}
+
+
+
+
+/* Responsiveness */
+
+
+/* Add this code to your existing CSS */
+
+/* Responsive design for screens up to 768px wide */
+@media (max-width: 768px) {
+
+    header{
+        font-size: 18px;
+    }
+
+    .contact-card {
+        max-width: 300px;
+    }
+    h2{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    p{
+        font-size: 10px;
+    }
+    
+    /* Style the navigation links */
+    .nav-links {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0;
+    }
+    
+    .nav-links li {
+        margin: 3px;
+    }
+    
+    .nav-links a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        transition: color 0.3s;
+        font-size: 7px
+    }
 }
 
